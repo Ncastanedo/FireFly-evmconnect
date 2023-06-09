@@ -377,7 +377,7 @@ func (bl *blockListener) trimToLastValidBlock() (lastValidBlock *minimalBlockInf
 
 func (bl *blockListener) dispatchToConsumers(consumers []*blockUpdateConsumer, update *ffcapi.BlockHashEvent) {
 	for _, c := range consumers {
-		log.L(bl.ctx).Tracef("Notifying consumer %s of blocks %v (gap=%t)", c.id, update.BlockHashes, update.GapPotential)
+		log.L(bl.ctx).Debugf("Notifying consumer %s of blocks %v (gap=%t)", c.id, update.BlockHashes, update.GapPotential)
 		select {
 		case c.updates <- update:
 		case <-bl.ctx.Done(): // loop, we're stopping and will exit on next loop
