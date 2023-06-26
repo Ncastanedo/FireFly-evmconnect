@@ -6,7 +6,7 @@ require (
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/hyperledger/firefly-common v1.2.14-0.20230624115424-95f92b67f626
 	github.com/hyperledger/firefly-signer v1.1.9
-	github.com/hyperledger/firefly-transaction-manager v1.2.14-0.20230626080025-502f3788ea50
+	github.com/hyperledger/firefly-transaction-manager v1.2.14-0.20230626105529-d4ae4b327d8e
 	github.com/sirupsen/logrus v1.9.2
 	github.com/spf13/cobra v1.6.1
 	github.com/stretchr/testify v1.8.1
